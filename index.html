@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Accountibility</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="text-center bg-gray-300 max-w-screen-lg m-auto">
+    <section class="flex mb-12 justify-center items-center">
+        <div id="mainheading">
+            <h2 class="text-4xl font-semibold text-lime-500">Monthly Accountibility</h2>
+        </div>
+        <div class="calculator-picture mt-2">
+            <img class="w-8 h-8 mx-1" src="calculator.png" alt="">
+        </div>
+    </section>
+
+    <Section class="main-section flex justify-between bg-stone-300 px-4 py-3">
+        <div id="onlypicture" class="w-7/12">
+            <img class="" id="main-picture" src="Money Calculate.jpg" alt="">
+        </div>
+
+        <div class="w-5/12 mx-6 px-6" id="all-data">
+            <h4 class="mb-4 text-center text-xl font-semibold">Income</h4>
+            <div class="flex mb-2">
+                <h6 class="block">Income:</h6>
+                <input class="w-24 mx-2" id="income" type="text">
+            </div>
+            <h4 class="mb-4 text-center text-xl font-semibold">Expenses</h4>
+            <div class="flex mb-2">
+                <h6 class="block">Food:</h6>
+                <input class="w-24 mx-2" id="food" type="text">
+            </div>
+            <div class="flex mb-2">
+                <h6 class="block">Rent:</h6>
+                <input class="w-24 mx-2" id="rent" type="text">
+            </div>
+            <div class="flex mb-2">
+                <h6 class="block">Clothes:</h6>
+                <input class="w-24 mx-2" id="clothes" type="text">
+            </div>
+            <button class="inline-flex items-center px-6 py-3 text-white font-semibold bg-blue-700 rounded-md shadow-sm"
+                id="calculate">Calculate</button>
+            <div class="flex mt-2">
+                <h5 class="block text-center text-xl font-semibold mt-2">Total Expenses:</h5>
+                <h6 class="w-20 mx-2 mt-2" id="totalexpenses" type="text"></h6>
+            </div>
+            <div class="flex mt-2">
+                <h5 class="block text-center text-xl font-semibold mt-2">Balance:</h5>
+                <h6 class="w-20 mx-2 mt-2" id="balance" type="text"></h6>
+            </div>
+            <div class="flex mt-2">
+                <h6 class="block font-semibold mt-1">save:</h6>
+                <h4 class="w-12 mx-2 mt-2" type="text">20</h4>
+                <h6 class="block mx-1 mt-2">%</h6>
+                <button class="bg-blue-700 block text-white font-semibold rounded mx-3 px-4"
+                    id="savebutton">Save</button>
+            </div>
+            <div class="flex">
+                <h5 class="block text-center text-xl font-semibold mt-2">Saving Amount:</h5>
+                <h6 class="w-20 mx-2 mt-2" id="savingamount" type="text"></h6>
+            </div>
+            <div class="flex">
+                <h5 class="block text-center text-xl font-semibold mt-2">Remaining Balance:</h5>
+                <h6 class="w-20 mx-2 mt-2" id="remainingbalance" type="text"></h6>
+            </div>
+        </div>
+    </Section>
+    <script src="Bank.js"></script>
+</body>
+
+</html>
